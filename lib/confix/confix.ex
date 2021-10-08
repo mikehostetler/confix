@@ -134,7 +134,7 @@ defmodule Confix do
         app_name
 
       :error ->
-        Application.get_env(:confix, :base_app, Mix.Project.config()[:app])
+        Application.get_env(:confix, :base_app)
     end
   end
 
